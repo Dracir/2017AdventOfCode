@@ -9,17 +9,12 @@ namespace DracirAdvent2017
         {
             Console.WriteLine("Hello World!");
 
-            var fileContent = File.ReadAllLines("D2/D2p1.txt");
-            var ints = InputParser.StringExcellToIntArrays(fileContent, '\t');
-            foreach (var i in ints)
-            {
-                foreach (var j in i)
-                {
-                    Console.Write(j + "\t");
-                }
-                Console.Write("\n");
-            }
-            D2.Checksum2(ints);
+            
+            
+            D4Passphrases.Part1();
+            
+            
+            return;
         }
     }
 }
