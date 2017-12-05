@@ -9,11 +9,12 @@ namespace DracirAdvent2017
         {
             Console.WriteLine("Hello World!");
 
+            //D4Passphrases.Part1();
+            //D5Trampolines.Part1();
+            //D5Trampolines.Part2();            
             
             
-            D4Passphrases.Part1();
-            
-            
+
             return;
         }
     }
