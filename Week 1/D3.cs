@@ -108,6 +108,15 @@ namespace DracirAdvent2017
                     stepRemaining = nbSteps;
                 }
             };
+
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
+                {
+                    Console.Write(string.Format("{0:000000} ", values[i,j]) + " ");
+                }
+                Console.Write("\n");
+            }
             Console.WriteLine("First value larger :" + stepValue);
         }
         // 1,2,1,2,1,2,1,2
