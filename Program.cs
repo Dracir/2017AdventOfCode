@@ -15,9 +15,10 @@ namespace DracirAdvent2017
             //D3.SpiralMemory();
             //D3.Part2();
             
-            D4Passphrases.Part1B();
-            D4Passphrases.Part2B();
+            //D4Passphrases.Part1B();
+            //D4Passphrases.Part2B();
 
+            D6.Part1();
             return;
         }
     }
