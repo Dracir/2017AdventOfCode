@@ -18,7 +18,10 @@ namespace DracirAdvent2017
             //D4Passphrases.Part1B();
             //D4Passphrases.Part2B();
 
-            D6.Part1();
+            //D6.Part1();
+            
+            Day7Circus.Part1();
+
             return;
         }
     }
