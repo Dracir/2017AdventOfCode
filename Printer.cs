@@ -28,4 +28,11 @@ public class Printer
         
         Console.Write(String.Format(s,value));
     }
+
+    public static void Print<t>(Dictionary<string,t> dictionary){
+        foreach (var l in dictionary)
+        {
+            Console.Write(string.Format("{0} : {1}\n",l.Key,l.Value));
+        }
+    }
 }
