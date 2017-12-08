@@ -20,9 +20,9 @@ namespace DracirAdvent2017
 
             //D6.Part1();
             
-            //Day7Circus.Part1();
+            Day7Circus.Part1();
 
-            D8Registers.Part1();
+            //D8Registers.Part1();
             return;
         }
     }

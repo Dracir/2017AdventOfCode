@@ -50,7 +50,9 @@ public class Day7Circus
         Console.WriteLine("Root : " + root.Name);
         Console.WriteLine("\n----------");
 
-        Console.WriteLine("a + " + FindTheWRONG(root));
+        Console.WriteLine("Le poids devrait etre + " + FindTheWRONG(root));
+        //1183  - 1079
+
     }
 
 	private static int FindTheWRONG(D7Node element)
@@ -66,9 +68,13 @@ public class Day7Circus
                 foreach (var c in element.Childs)
                 {
                     Console.WriteLine(c.Name + " : " + c.TotalWeight);                
-                } 
+                }
+                if(groups.First().Count() > groups.Last().Count())
+                    return groups.Last().First().Weight;
+                else
+                    return groups.Last().Last().Weight;
 
-                return (int)( MathF.Max(a,b) - MathF.Min(a,b));
+                //return (int)( MathF.Max(a,b) - MathF.Min(a,b));
                 //return a;
             }
         }else{
@@ -85,10 +91,11 @@ public class D7Node
     public int Weight; 
     public int TotalWeight{
         get{
-            var ChildWeight = 0;
+            var childWeight = 0;
             if(Childs.Count() > 0)
-                ChildWeight = Childs.Select(c=>c.TotalWeight).Aggregate( (sum,a) => sum + a);
-            return Weight + ChildWeight;
+           
+                childWeight = Childs.Select(c=>c.TotalWeight).Aggregate( (sum,a) => sum + a);
+            return Weight + childWeight;
         }
     }
 }
